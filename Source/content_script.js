@@ -62,6 +62,11 @@ function replaceText(v)
     v = v.replace(/\bThe Three Of You\b/g, "Y'All");
     v = v.replace(/\bTHE THREE OF YOU\b/g, "Y'ALL");
 
+    // you lot
+    v = v.replace(/\b(Y|y)ou lot\b/g, "$1'all");
+    v = v.replace(/\bYou Lot\b/g, "Y'All");
+    v = v.replace(/\bYOU LOT\b/g, "Y'ALL");
+
     // the lot of you
     v = v.replace(/\bthe lot of you\b/g, "y'all");
     v = v.replace(/\bThe lot of you\b/g, "Y'all");
@@ -84,6 +89,57 @@ function replaceText(v)
     v = v.replace(/\bOver there\b/g, "Over yonder");
     v = v.replace(/\bOver There\b/g, "Over Yonder");
     v = v.replace(/\bOVER THERE\b/g, "OVER YONDER");
+    
+    // yous guys
+    v = v.replace(/\b(Y|y)ous guys\b/g, "$1'all");
+    v = v.replace(/\bYous Guys\b/g, "Y'All");
+    v = v.replace(/\bYOUS GUYS\b/g, "Y'ALL");
+
+    // yous
+    v = v.replace(/\b(Y|y)ous\b/g, "$1'all");
+    v = v.replace(/\bYOUS\b/g, "Y'ALL");
+
+    // youse guys
+    v = v.replace(/\b(Y|y)ouse guys\b/g, "$1'all");
+    v = v.replace(/\bYouse Guys\b/g, "Y'All");
+    v = v.replace(/\bYOUSE GUYS\b/g, "Y'ALL");
+
+    // youse
+    v = v.replace(/\b(Y|y)ouse\b/g, "$1'all");
+    v = v.replace(/\bYOUSE\b/g, "Y'ALL");
+
+    // yinz
+    v = v.replace(/\b(Y|y)inz\b/g, "$1'all");
+    v = v.replace(/\bYINZ\b/g, "Y'ALL");
+
+    // you-uns
+    v = v.replace(/\b(Y|y)out-uns\b/g, "$1'all");
+    v = v.replace(/\bYou-Uns\b/g, "Y'All");
+    v = v.replace(/\bYOU-UNS\b/g, "Y'ALL");
+
+    // ye
+    v = v.replace(/\b(Y|y)e\b/g, "$1'all");
+    v = v.replace(/\bYE\b/g, "Y'ALL");
+
+    // vous (French)
+    v = v.replace(/\bvous\b/g, "y'all");
+    v = v.replace(/\bVous\b/g, "Y'all");
+    v = v.replace(/\bVOUS\b/g, "Y'ALL");
+
+    // voi (Italian)
+    v = v.replace(/\bvoi\b/g, "y'all");
+    v = v.replace(/\bVoi\b/g, "Y'all");
+    v = v.replace(/\bVOI\b/g, "Y'ALL");
+
+    // ustedes (Spanish)
+    v = v.replace(/\bustedes\b/g, "y'all");
+    v = v.replace(/\bUstedes\b/g, "Y'all");
+    v = v.replace(/\bUSTEDES\b/g, "Y'ALL");
+
+    // ihr (German)
+    v = v.replace(/\bihr\b/g, "y'all");
+    v = v.replace(/\bIhr\b/g, "Y'all");
+    v = v.replace(/\bIHR\b/g, "Y'ALL");
 
     return v;
 }
