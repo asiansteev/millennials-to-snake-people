@@ -10,7 +10,7 @@
 	"content_scripts":
 	[
 		{
-			"matches": ["*://*/*", "file:///Users/steev/code/y-allifier/Source/you%20all%20test.html"],
+			"matches": ["*://*/*", "file:///Users/steev/code/y-allifier/you%20all%20test.html"],
 			"all_frames": true,
 			"js": ["content_script.js"],
 			"run_at": "document_end"
