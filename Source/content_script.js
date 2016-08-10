@@ -80,15 +80,6 @@ function replaceText(v)
     v = v.replace(/\bALL OF YOU\b/g, "Y'ALL");
     v = v.replace(/\bAll of You\b/g, "Y'All");
     v = v.replace(/\bAll Of You\b/g, "Y'All");
-
-    // "every one of you", "everyone here" don't work because it's
-    // like singular present tense or something
-
-    // over there -> over yonder
-    v = v.replace(/\bover there\b/g, "over yonder");
-    v = v.replace(/\bOver there\b/g, "Over yonder");
-    v = v.replace(/\bOver There\b/g, "Over Yonder");
-    v = v.replace(/\bOVER THERE\b/g, "OVER YONDER");
     
     // yous guys
     v = v.replace(/\b(Y|y)ous guys\b/g, "$1'all");
@@ -113,7 +104,7 @@ function replaceText(v)
     v = v.replace(/\bYINZ\b/g, "Y'ALL");
 
     // you-uns
-    v = v.replace(/\b(Y|y)out-uns\b/g, "$1'all");
+    v = v.replace(/\b(Y|y)ou-uns\b/g, "$1'all");
     v = v.replace(/\bYou-Uns\b/g, "Y'All");
     v = v.replace(/\bYOU-UNS\b/g, "Y'ALL");
 
@@ -140,6 +131,15 @@ function replaceText(v)
     v = v.replace(/\bihr\b/g, "y'all");
     v = v.replace(/\bIhr\b/g, "Y'all");
     v = v.replace(/\bIHR\b/g, "Y'ALL");
+
+    // "every one of you", "everyone here" don't work because it's
+    // like singular present tense or something
+
+    // over there -> over yonder
+    v = v.replace(/\bover there\b/g, "over yonder");
+    v = v.replace(/\bOver there\b/g, "Over yonder");
+    v = v.replace(/\bOver There\b/g, "Over Yonder");
+    v = v.replace(/\bOVER THERE\b/g, "OVER YONDER");
 
     return v;
 }
