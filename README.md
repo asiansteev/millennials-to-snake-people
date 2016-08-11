@@ -7,7 +7,7 @@ Browser extension that makes the words of the world a little gentler on the soul
 
 1. Add the extension to your browser of choice: 
   - [Chrome](https://chrome.google.com/webstore/detail/yallifier/aicapddnpcanaijnigmldonmponhbgeb)
-  - Well, that's it for now.
+  - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/y-allifier/)
 - [Free your mind](https://www.google.com/search?q=%22You%20guys%22)
 
 
