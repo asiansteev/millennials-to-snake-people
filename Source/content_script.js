@@ -103,10 +103,19 @@ function replaceText(v)
     v = v.replace(/\b(Y|y)inz\b/g, "$1'all");
     v = v.replace(/\bYINZ\b/g, "Y'ALL");
 
-    // you-uns
-    v = v.replace(/\b(Y|y)ou-uns\b/g, "$1'all");
-    v = v.replace(/\bYou-Uns\b/g, "Y'All");
-    v = v.replace(/\bYOU-UNS\b/g, "Y'ALL");
+    // youins
+    v = v.replace(/\b(Y|y)ouins\b/g, "$1'all");
+    v = v.replace(/\bYOUINS\b/g, "Y'ALL");    
+    
+    // you ins/you'ins/you-ins
+    v = v.replace(/\b(Y|y)ou( |'|-)ins\b/g, "$1'all");
+    v = v.replace(/\bYou( |'|-)Ins\b/g, "Y'All");
+    v = v.replace(/\bYOU( |'|-)INS\b/g, "Y'ALL");
+
+    // you'uns/you-uns
+    v = v.replace(/\b(Y|y)ou('|-)uns\b/g, "$1'all");
+    v = v.replace(/\bYou('|-)Uns\b/g, "Y'All");
+    v = v.replace(/\bYOU('|-)UNS\b/g, "Y'ALL");
 
     // ye
     v = v.replace(/\b(Y|y)e\b/g, "$1'all");
