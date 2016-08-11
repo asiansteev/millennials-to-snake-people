@@ -32,10 +32,10 @@ function replaceText(v)
     v = v.replace(/\bU All\b/g, "Y'All");
     v = v.replace(/\bU ALL\b/g, "Y'ALL");
 
-    // you guys/you guyz
-    v = v.replace(/\b(Y|y)ou guy(s|z)\b/g, "$1'all");
-    v = v.replace(/\bYou Guy(s|z)\b/g, "Y'All");
-    v = v.replace(/\bYOU GUY(S|Z)\b/g, "Y'ALL");
+    // you guys/you guyz/you-guys/you-guyz
+    v = v.replace(/\b(Y|y)ou( |-)guy(s|z)\b/g, "$1'all");
+    v = v.replace(/\bYou( |-)Guy(s|z)\b/g, "Y'All");
+    v = v.replace(/\bYOU( |-)GUY(S|Z)\b/g, "Y'ALL");
 
     // u guys/u guyz
     v = v.replace(/\bu guy(s|z)\b/g, "y'all");
