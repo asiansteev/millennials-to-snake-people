@@ -1,4 +1,4 @@
-# Y'allifier
+# Y’allifier
 
 Browser extension that makes the words of the world a little gentler on the soul.
 
