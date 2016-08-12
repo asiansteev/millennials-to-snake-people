@@ -21,125 +21,129 @@ function handleText(textNode) {
 
 function replaceText(v)
 {
+    // y'all -> y’all (it just looks nicer)
+    v = v.replace(/\b(Y|y)'(A|a)ll\b/g, "$1’$2ll");
+    v = v.replace(/\bY'ALL\b/g, "Y’ALL");
+
     // you all/you-all
-    v = v.replace(/\b(Y|y)ou( |-)(A|a)ll\b/g, "$1'$3ll");
-    v = v.replace(/\bYOU ALL\b/g, "Y'ALL");
-    v = v.replace(/\bYOU-ALL\b/g, "Y'ALL");          
+    v = v.replace(/\b(Y|y)ou( |-)(A|a)ll\b/g, "$1’$3ll");
+    v = v.replace(/\bYOU ALL\b/g, "Y’ALL");
+    v = v.replace(/\bYOU-ALL\b/g, "Y’ALL");          
 
     // u all
-    v = v.replace(/\bu all\b/g, "y'all");
-    v = v.replace(/\bU all\b/g, "Y'all");
-    v = v.replace(/\bU All\b/g, "Y'All");
-    v = v.replace(/\bU ALL\b/g, "Y'ALL");
+    v = v.replace(/\bu all\b/g, "y’all");
+    v = v.replace(/\bU all\b/g, "Y’all");
+    v = v.replace(/\bU All\b/g, "Y’All");
+    v = v.replace(/\bU ALL\b/g, "Y’ALL");
 
     // you guys/you guyz/you-guys/you-guyz
-    v = v.replace(/\b(Y|y)ou( |-)guy(s|z)\b/g, "$1'all");
-    v = v.replace(/\bYou( |-)Guy(s|z)\b/g, "Y'All");
-    v = v.replace(/\bYOU( |-)GUY(S|Z)\b/g, "Y'ALL");
+    v = v.replace(/\b(Y|y)ou( |-)guy(s|z)\b/g, "$1’all");
+    v = v.replace(/\bYou( |-)Guy(s|z)\b/g, "Y’All");
+    v = v.replace(/\bYOU( |-)GUY(S|Z)\b/g, "Y’ALL");
 
     // u guys/u guyz
-    v = v.replace(/\bu guy(s|z)\b/g, "y'all");
-    v = v.replace(/\bU guy(s|z)\b/g, "Y'all");
-    v = v.replace(/\bU Guy(s|z)\b/g, "Y'All");
-    v = v.replace(/\bU GUY(S|Z)\b/g, "Y'ALL");
+    v = v.replace(/\bu guy(s|z)\b/g, "y’all");
+    v = v.replace(/\bU guy(s|z)\b/g, "Y’all");
+    v = v.replace(/\bU Guy(s|z)\b/g, "Y’All");
+    v = v.replace(/\bU GUY(S|Z)\b/g, "Y’ALL");
 
     // you two
-    v = v.replace(/\b(Y|y)ou two\b/g, "$1'all");
-    v = v.replace(/\bYou Two\b/g, "Y'All");
-    v = v.replace(/\bYOU TWO\b/g, "Y'ALL");
+    v = v.replace(/\b(Y|y)ou two\b/g, "$1’all");
+    v = v.replace(/\bYou Two\b/g, "Y’All");
+    v = v.replace(/\bYOU TWO\b/g, "Y’ALL");
 
     // the two of you
-    v = v.replace(/\bthe two of you\b/g, "y'all");
-    v = v.replace(/\bThe two of you\b/g, "Y'all");
-    v = v.replace(/\bThe Two of You\b/g, "Y'All");
-    v = v.replace(/\bThe Two Of You\b/g, "Y'All");
-    v = v.replace(/\bTHE TWO OF YOU\b/g, "Y'ALL");
+    v = v.replace(/\bthe two of you\b/g, "y’all");
+    v = v.replace(/\bThe two of you\b/g, "Y’all");
+    v = v.replace(/\bThe Two of You\b/g, "Y’All");
+    v = v.replace(/\bThe Two Of You\b/g, "Y’All");
+    v = v.replace(/\bTHE TWO OF YOU\b/g, "Y’ALL");
 
     // the three of you
-    v = v.replace(/\bthe three of you\b/g, "y'all");
-    v = v.replace(/\bThe three of you\b/g, "Y'all");
-    v = v.replace(/\bThe Three of You\b/g, "Y'All");
-    v = v.replace(/\bThe Three Of You\b/g, "Y'All");
-    v = v.replace(/\bTHE THREE OF YOU\b/g, "Y'ALL");
+    v = v.replace(/\bthe three of you\b/g, "y’all");
+    v = v.replace(/\bThe three of you\b/g, "Y’all");
+    v = v.replace(/\bThe Three of You\b/g, "Y’All");
+    v = v.replace(/\bThe Three Of You\b/g, "Y’All");
+    v = v.replace(/\bTHE THREE OF YOU\b/g, "Y’ALL");
 
     // you lot
-    v = v.replace(/\b(Y|y)ou lot\b/g, "$1'all");
-    v = v.replace(/\bYou Lot\b/g, "Y'All");
-    v = v.replace(/\bYOU LOT\b/g, "Y'ALL");
+    v = v.replace(/\b(Y|y)ou lot\b/g, "$1’all");
+    v = v.replace(/\bYou Lot\b/g, "Y’All");
+    v = v.replace(/\bYOU LOT\b/g, "Y’ALL");
 
     // the lot of you
-    v = v.replace(/\bthe lot of you\b/g, "y'all");
-    v = v.replace(/\bThe lot of you\b/g, "Y'all");
-    v = v.replace(/\bThe Lot of You\b/g, "Y'All");
-    v = v.replace(/\bThe Lot Of You\b/g, "Y'All");
-    v = v.replace(/\bTHE LOT OF YOU\b/g, "Y'ALL");
+    v = v.replace(/\bthe lot of you\b/g, "y’all");
+    v = v.replace(/\bThe lot of you\b/g, "Y’all");
+    v = v.replace(/\bThe Lot of You\b/g, "Y’All");
+    v = v.replace(/\bThe Lot Of You\b/g, "Y’All");
+    v = v.replace(/\bTHE LOT OF YOU\b/g, "Y’ALL");
 
     // all of you
-    v = v.replace(/\bAll of you\b/g, "Y'all");
-    v = v.replace(/\ball of you\b/g, "y'all");
-    v = v.replace(/\bALL OF YOU\b/g, "Y'ALL");
-    v = v.replace(/\bAll of You\b/g, "Y'All");
-    v = v.replace(/\bAll Of You\b/g, "Y'All");
+    v = v.replace(/\bAll of you\b/g, "Y’all");
+    v = v.replace(/\ball of you\b/g, "y’all");
+    v = v.replace(/\bALL OF YOU\b/g, "Y’ALL");
+    v = v.replace(/\bAll of You\b/g, "Y’All");
+    v = v.replace(/\bAll Of You\b/g, "Y’All");
     
     // yous guys
-    v = v.replace(/\b(Y|y)ous guys\b/g, "$1'all");
-    v = v.replace(/\bYous Guys\b/g, "Y'All");
-    v = v.replace(/\bYOUS GUYS\b/g, "Y'ALL");
+    v = v.replace(/\b(Y|y)ous guys\b/g, "$1’all");
+    v = v.replace(/\bYous Guys\b/g, "Y’All");
+    v = v.replace(/\bYOUS GUYS\b/g, "Y’ALL");
 
     // yous
-    v = v.replace(/\b(Y|y)ous\b/g, "$1'all");
-    v = v.replace(/\bYOUS\b/g, "Y'ALL");
+    v = v.replace(/\b(Y|y)ous\b/g, "$1’all");
+    v = v.replace(/\bYOUS\b/g, "Y’ALL");
 
     // youse guys
-    v = v.replace(/\b(Y|y)ouse guys\b/g, "$1'all");
-    v = v.replace(/\bYouse Guys\b/g, "Y'All");
-    v = v.replace(/\bYOUSE GUYS\b/g, "Y'ALL");
+    v = v.replace(/\b(Y|y)ouse guys\b/g, "$1’all");
+    v = v.replace(/\bYouse Guys\b/g, "Y’All");
+    v = v.replace(/\bYOUSE GUYS\b/g, "Y’ALL");
 
     // youse
-    v = v.replace(/\b(Y|y)ouse\b/g, "$1'all");
-    v = v.replace(/\bYOUSE\b/g, "Y'ALL");
+    v = v.replace(/\b(Y|y)ouse\b/g, "$1’all");
+    v = v.replace(/\bYOUSE\b/g, "Y’ALL");
 
     // yinz
-    v = v.replace(/\b(Y|y)inz\b/g, "$1'all");
-    v = v.replace(/\bYINZ\b/g, "Y'ALL");
+    v = v.replace(/\b(Y|y)inz\b/g, "$1’all");
+    v = v.replace(/\bYINZ\b/g, "Y’ALL");
 
     // youins
-    v = v.replace(/\b(Y|y)ouins\b/g, "$1'all");
-    v = v.replace(/\bYOUINS\b/g, "Y'ALL");    
+    v = v.replace(/\b(Y|y)ouins\b/g, "$1’all");
+    v = v.replace(/\bYOUINS\b/g, "Y’ALL");    
     
     // you ins/you'ins/you-ins/you’ins
-    v = v.replace(/\b(Y|y)ou( |'|-|’)ins\b/g, "$1'all");
-    v = v.replace(/\bYou( |'|-|’)Ins\b/g, "Y'All");
-    v = v.replace(/\bYOU( |'|-|’)INS\b/g, "Y'ALL");
+    v = v.replace(/\b(Y|y)ou( |'|-|’)ins\b/g, "$1’all");
+    v = v.replace(/\bYou( |'|-|’)Ins\b/g, "Y’All");
+    v = v.replace(/\bYOU( |'|-|’)INS\b/g, "Y’ALL");
 
     // you'uns/you-uns/you’uns
-    v = v.replace(/\b(Y|y)ou('|-|’)uns\b/g, "$1'all");
-    v = v.replace(/\bYou('|-|’)Uns\b/g, "Y'All");
-    v = v.replace(/\bYOU('|-|’)UNS\b/g, "Y'ALL");
+    v = v.replace(/\b(Y|y)ou('|-|’)uns\b/g, "$1’all");
+    v = v.replace(/\bYou('|-|’)Uns\b/g, "Y’All");
+    v = v.replace(/\bYOU('|-|’)UNS\b/g, "Y’ALL");
 
     // ye
-    v = v.replace(/\b(Y|y)e\b/g, "$1'all");
-    v = v.replace(/\bYE\b/g, "Y'ALL");
+    v = v.replace(/\b(Y|y)e\b/g, "$1’all");
+    v = v.replace(/\bYE\b/g, "Y’ALL");
 
     // vous (French)
-    v = v.replace(/\bvous\b/g, "y'all");
-    v = v.replace(/\bVous\b/g, "Y'all");
-    v = v.replace(/\bVOUS\b/g, "Y'ALL");
+    v = v.replace(/\bvous\b/g, "y’all");
+    v = v.replace(/\bVous\b/g, "Y’all");
+    v = v.replace(/\bVOUS\b/g, "Y’ALL");
 
     // voi (Italian)
-    v = v.replace(/\bvoi\b/g, "y'all");
-    v = v.replace(/\bVoi\b/g, "Y'all");
-    v = v.replace(/\bVOI\b/g, "Y'ALL");
+    v = v.replace(/\bvoi\b/g, "y’all");
+    v = v.replace(/\bVoi\b/g, "Y’all");
+    v = v.replace(/\bVOI\b/g, "Y’ALL");
 
     // ustedes (Spanish)
-    v = v.replace(/\bustedes\b/g, "y'all");
-    v = v.replace(/\bUstedes\b/g, "Y'all");
-    v = v.replace(/\bUSTEDES\b/g, "Y'ALL");
+    v = v.replace(/\bustedes\b/g, "y’all");
+    v = v.replace(/\bUstedes\b/g, "Y’all");
+    v = v.replace(/\bUSTEDES\b/g, "Y’ALL");
 
     // ihr (German)
-    v = v.replace(/\bihr\b/g, "y'all");
-    v = v.replace(/\bIhr\b/g, "Y'all");
-    v = v.replace(/\bIHR\b/g, "Y'ALL");
+    v = v.replace(/\bihr\b/g, "y’all");
+    v = v.replace(/\bIhr\b/g, "Y’all");
+    v = v.replace(/\bIHR\b/g, "Y’ALL");
 
     // "every one of you", "everyone here" don't work because it's
     // like singular present tense or something
