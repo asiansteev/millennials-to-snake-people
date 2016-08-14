@@ -36,6 +36,15 @@ function replaceText(v)
     v = v.replace(/\bU All\b/g, "Y’All");
     v = v.replace(/\bU ALL\b/g, "Y’ALL");
 
+    // yall
+    v = v.replace(/\b(Y|y)all\b/g, "$1’all");
+    v = v.replace(/\bYALL\b/g, "Y’ALL");
+
+    // ya'll/ya-ll/ya’ll
+    v = v.replace(/\b(Y|y)a('|-|’)ll\b/g, "$1’all");
+    v = v.replace(/\bYa('|-|’)Ll\b/g, "Y’All");
+    v = v.replace(/\bYA('|-|’)LL\b/g, "Y’ALL");
+
     // you guys/you guyz/you-guys/you-guyz
     v = v.replace(/\b(Y|y)ou( |-)guy(s|z)\b/g, "$1’all");
     v = v.replace(/\bYou( |-)Guy(s|z)\b/g, "Y’All");
