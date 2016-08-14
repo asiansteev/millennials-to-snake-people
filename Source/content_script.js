@@ -99,6 +99,11 @@ function replaceText(v)
     v = v.replace(/\bYouse Guys\b/g, "Y’All");
     v = v.replace(/\bYOUSE GUYS\b/g, "Y’ALL");
 
+    // you guyses (for Sarabeth)
+    v = v.replace(/\b(Y|y)ou guyses\b/g, "$1’all");
+    v = v.replace(/\bYou Guyses\b/g, "Y’All");
+    v = v.replace(/\bYOU GUYSES\b/g, "Y’ALL");
+
     // youse
     v = v.replace(/\b(Y|y)ouse\b/g, "$1’all");
     v = v.replace(/\bYOUSE\b/g, "Y’ALL");
