@@ -117,6 +117,10 @@ function replaceText(v)
     v = v.replace(/\b(Y|y)ouse\b/g, "$1’all");
     v = v.replace(/\bYOUSE\b/g, "Y’ALL");
 
+    // yins
+    v = v.replace(/\b(Y|y)ins\b/g, "$1’all");
+    v = v.replace(/\bYINS\b/g, "Y’ALL");
+
     // yinz
     v = v.replace(/\b(Y|y)inz\b/g, "$1’all");
     v = v.replace(/\bYINZ\b/g, "Y’ALL");
